@@ -9,7 +9,7 @@ printf "::group:: === Copying files ===\n"
 cp -avf "${CONTEXT_PATH}/system_files/." /
 printf "::endgroup::\n"
 
-for script in $(find ${BUILD_SCRIPTS_PATH} -maxdepth 1 -iname "*-*.sh" -type f -print0 | sort --sort=human-numeric); do
+for script in $(find ${BUILD_SCRIPTS_PATH} -maxdepth 1 -iname "*-*.sh" -type f | sort --sort=human-numeric); do
     printf "::group:: === $(basename "$script") ===\n"
 		"$(realpath $script)"
     printf "::endgroup::\n"
