@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-CONTEXT_PATH="$(realpath "$(dirname "$0")/..")" # should return /run/context
+CONTEXT_PATH="$(realpath "$(dirname "$0")/..")" # should return /ctx
 BUILD_SCRIPTS_PATH="$(realpath "$(dirname "$0")")"
 
 printf "::group:: === Copying files ===\n"
