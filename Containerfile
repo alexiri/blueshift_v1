@@ -14,7 +14,7 @@ FROM quay.io/almalinuxorg/almalinux-bootc:10-kitten
 RUN --mount=type=tmpfs,dst=/opt \
     --mount=type=tmpfs,dst=/tmp \
     --mount=type=bind,from=ctx,source=/,target=/ctx \
-    /ctx/build.sh && \
+    /ctx/build_files/build.sh && \
     ostree container commit
 
 ### LINTING
