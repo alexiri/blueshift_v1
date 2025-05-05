@@ -5,7 +5,7 @@ COPY system_files /system_files
 COPY build_files /build_files
 
 # Base Image
-FROM quay.io/almalinuxorg/almalinux-bootc:10-kitten@sha256:de30d10ace94b373a9cc3e05b0295b81972061ec25275a341102d71db3f052c0
+FROM quay.io/almalinuxorg/almalinux-bootc:10-kitten@sha256:e9da87507fe7840baf11072207f018e53e14011ee2e4ea74b3fcdb0b2b731a62
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
